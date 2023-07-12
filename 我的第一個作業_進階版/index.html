@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的第一個網頁</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        box-sizing: border-box;
+        transition: 1s;
+        overflow-x: hidden;
+        font-family: "Arial", "微軟正黑體";
+      }
+
+      .row hr {
+        margin: 1rem;
+        /* width: 95%; */
+        border: 1px solid #aaa;
+      }
+
+      .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+      }
+
+      .row {
+        width: 90%;
+      }
+
+      .col img {
+        width: 50%;
+      }
+
+      .col {
+        text-align: center;
+      }
+
+      .col p {
+        display: block;
+      }
+
+      .col h2 {
+        text-align: left;
+        font-family: bolder;
+      }
+
+      @media (min-width: 576px) {
+        .col p {
+          display: none;
+        }
+
+        /* .row hr {
+          display: none;
+        } */
+
+        .col h2 {
+          text-align: center;
+        }
+
+        .col img {
+          width: 40%;
+        }
+
+        .row hr:nth-child(2) {
+          position: absolute;
+          width: 7%;
+          top: 30%;
+          left: 35%;
+          transform: translate(-35%, -30%);
+          transform: rotate(45deg);
+        }
+
+        .row hr:nth-child(4) {
+          position: absolute;
+          width: 25%;
+          top: 35%;
+          left: 15%;
+          transform: translate(-15%, -35%);
+          transform: rotate(15deg);
+        }
+
+        .row hr:nth-child(6) {
+          position: absolute;
+          width: 18%;
+          top: 55%;
+          left: 22%;
+          transform: translate(-22%, -55%);
+          transform: rotate(170deg);
+        }
+
+        .row hr:nth-child(8) {
+          position: absolute;
+          width: 6%;
+          top: 65%;
+          left: 32%;
+          transform: translate(-32%, -65%);
+          transform: rotate(155deg);
+        }
+
+        .row hr:nth-child(10) {
+          position: absolute;
+          width: 12%;
+          top: 60%;
+          left: 56%;
+          transform: translate(-56%, -60%);
+          transform: rotate(210deg);
+        }
+
+        .row hr:nth-child(12) {
+          position: absolute;
+          width: 16%;
+          top: 45%;
+          left: 58%;
+          transform: translate(-58%, -45%);
+          transform: rotate(178deg);
+        }
+
+        .row hr:nth-child(14) {
+          position: absolute;
+          width: 10%;
+          top: 32%;
+          left: 57%;
+          transform: translate(-57%, -32%);
+          transform: rotate(155deg);
+        }
+
+        #wda {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        #wda p {
+          display: block;
+          font-size: 12px;
+        }
+
+        #wda span {
+          font-size: 14px;
+          font-weight: bolder;
+        }
+
+        #html {
+          position: absolute;
+          top: 10%;
+          left: 3%;
+          transform: translate(-3%, -10%);
+        }
+
+        #css {
+          position: absolute;
+          top: 2%;
+          left: 28%;
+          transform: translate(-28%, -2%);
+        }
+
+        #js {
+          position: absolute;
+          top: 70%;
+          left: 10%;
+          transform: translate(-10%, -70%);
+        }
+
+        #jq {
+          position: absolute;
+          top: 95%;
+          left: 25%;
+          transform: translate(-25%, -95%);
+        }
+
+        #bs {
+          position: absolute;
+          top: 12%;
+          left: 80%;
+          transform: translate(-80%, -12%);
+        }
+
+        #sass {
+          position: absolute;
+          top: 45%;
+          left: 90%;
+          transform: translate(-90%, -45%);
+          width: 20%;
+        }
+
+        #vue {
+          position: absolute;
+          top: 80%;
+          left: 78%;
+          transform: translate(-78%, -80%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col" id="wda">
+          <img src="https://github.com/wdaweb.png" />
+          <h2>泰山職業訓練場</h2>
+          <p>
+            <span>政府自辦訓練課程　待業民眾完全免費</span><br />
+            轉職網頁開發人員　掌握就業必備職能<br />
+            由淺入深學習技術　強化職場的競爭力
+          </p>
+        </div>
+
+        <hr />
+
+        <div class="col" id="html">
+          <img src="./images/html.png" />
+          <h2>Html</h2>
+          <p>
+            HTML5是一種用於建立網頁的標準標記語言，常與CSS、JavaScript一起被眾多網站用於設計網頁、網頁應用程式以及行動應用程式的使用者介面。
+          </p>
+        </div>
+
+        <hr />
+
+        <div class="col" id="css">
+          <img src="./images/css.png" />
+          <h2>CSS</h2>
+          <p>
+            CSS是一種用於網頁設計的樣式表語言，常與HTML、JavaScript一起被眾多網站用於設計網頁、網頁應用程式以及行動應用程式的使用者介面。
+          </p>
+        </div>
+
+        <hr />
+
+        <div class="col" id="js">
+          <img src="./images/js.png" />
+          <h2>JavaScript</h2>
+          <p>
+            JavaScript是一種用於網頁設計的腳本語言，常與HTML、CSS一起被眾多網站用於設計網頁、網頁應用程式以及行動應用程式的使用者介面。
+          </p>
+        </div>
+
+        <hr />
+
+        <div class="col" id="jq">
+          <img src="./images/jq.png" />
+          <h2>jQuery</h2>
+          <p>
+            jQuery是一種JavaScript函式庫，提供了簡化HTML文件操作、事件處理、動畫效果和Ajax等功能，被廣泛用於網頁設計。
+          </p>
+        </div>
+
+        <hr />
+
+        <div class="col" id="bs">
+          <img src="./images/bs.png" />
+          <h2>Bootstrap</h2>
+          <p>
+            Bootstrap是一種用於網頁設計的前端框架，提供了HTML、CSS和JavaScript的設計模板，被廣泛用於網頁設計，以實現快速、易用和美觀的網頁設計。
+          </p>
+        </div>
+
+        <hr />
+
+        <div class="col" id="sass">
+          <img src="./images/sass.png" />
+          <h2>Sass</h2>
+          <p>
+            Sass是一種CSS預處理器，它提供了許多CSS不具備的功能，例如變數、巢狀規則、Mixin、引用等，以及更好的代碼結構和可讀性。Sass有兩種語法：SCSS和Sass，其中SCSS語法與CSS語法相似，而Sass語法則更為簡潔。
+          </p>
+        </div>
+
+        <hr />
+
+        <div class="col" id="vue">
+          <img src="./images/vue.png" />
+          <h2>Vue.js</h2>
+          <p>
+            Vue.js是一款用於構建用戶界面的JavaScript框架，它基於標準HTML、CSS和JavaScript構建，並提供了一套聲明式的、組件化的編程模型，幫助你高效地開發用戶界面。
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
